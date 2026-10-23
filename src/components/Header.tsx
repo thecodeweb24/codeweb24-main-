@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
+import BrandLogo from "./BrandLogo";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -19,14 +20,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="panel-surface flex h-16 items-center justify-between rounded-full px-4 sm:px-6">
-          <Link href="/" className="flex items-center gap-3">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-[linear-gradient(135deg,var(--accent),#8bb8ff)] text-sm font-black text-white shadow-[0_12px_24px_rgba(79,126,255,0.28)]">
-              C
-            </span>
-            <span className="text-lg font-black tracking-[-0.05em] text-[var(--text)] sm:text-xl">
-              CODE<span className="text-[var(--accent)]">WEB</span>24
-            </span>
-          </Link>
+          <BrandLogo className="brand-logo-header" />
 
           <nav className="hidden items-center gap-8 md:flex">
             {navItems.map((item) => (

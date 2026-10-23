@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandLogo from "./BrandLogo";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -14,14 +15,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 md:grid-cols-[1.1fr_0.8fr_1fr]">
           <div>
-            <Link href="/" className="flex items-center gap-3">
-              <span className="grid h-10 w-10 place-items-center rounded-2xl bg-[linear-gradient(135deg,var(--accent),#8bb8ff)] text-base font-black text-white">
-                C
-              </span>
-              <span className="text-xl font-black tracking-[-0.05em] text-[var(--text)]">
-                CODE<span className="text-[var(--accent)]">WEB</span>24
-              </span>
-            </Link>
+            <BrandLogo className="brand-logo-footer" />
             <p className="mt-5 max-w-sm text-base leading-7 text-[var(--muted)]">
               We Build Digital Experiences. Strategy, design, and software engineering for businesses ready to grow.
             </p>
