@@ -17,9 +17,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 px-3 pt-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="panel-surface flex h-16 items-center justify-between rounded-full px-4 sm:px-6">
+        <div className="panel-surface flex h-16 items-center justify-between gap-2 rounded-full px-3 sm:px-6">
           <BrandLogo className="brand-logo-header" />
 
           <nav className="hidden items-center gap-8 md:flex">
@@ -41,7 +41,7 @@ export default function Header() {
             </Link>
           </div>
 
-          <div className="flex items-center gap-2 md:hidden">
+          <div className="flex shrink-0 items-center gap-2 md:hidden">
             <ThemeToggle />
             <button
               type="button"
